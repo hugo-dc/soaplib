@@ -328,7 +328,7 @@ class Application(object):
         return self.__classes[key]()
 
     def parse_xml_string(self, xml_string, charset=None):
-        return _parse_xml_string(x, charset)
+        return _parse_xml_string(xml_string, charset)
 
     def decompose_incoming_envelope(self, ctx, envelope_xml, xmlids=None):
         header, body = _from_soap(envelope_xml, xmlids)
